@@ -14,5 +14,6 @@ namespace formIndex {
         public Form1() {
             InitializeComponent();//susu //thank you
         }
+        //ตั้งใจทำงานนะค่ะ
     }
 }
