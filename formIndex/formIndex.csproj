@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="form\ChooseFlight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\ChooseFlight.Designer.cs">
+      <DependentUpon>ChooseFlight.cs</DependentUpon>
+    </Compile>
     <Compile Include="form\Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +61,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="form\ChooseFlight.resx">
+      <DependentUpon>ChooseFlight.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="form\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
