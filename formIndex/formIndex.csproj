@@ -47,24 +47,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="form\ChooseFlight.cs">
+    <Compile Include="Forms\ChooseFlight.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="form\ChooseFlight.Designer.cs">
+    <Compile Include="Forms\ChooseFlight.Designer.cs">
       <DependentUpon>ChooseFlight.cs</DependentUpon>
     </Compile>
-    <Compile Include="form\Home.cs">
+    <Compile Include="Forms\Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="form\Home.Designer.cs">
+    <Compile Include="Forms\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="form\ChooseFlight.resx">
+    <EmbeddedResource Include="Forms\ChooseFlight.resx">
       <DependentUpon>ChooseFlight.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="form\Home.resx">
+    <EmbeddedResource Include="Forms\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
