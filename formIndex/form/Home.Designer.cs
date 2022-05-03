@@ -114,9 +114,9 @@ namespace formIndex
             // 
             this.dateTimePicker1.CalendarTrailingForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(531, 69);
+            this.dateTimePicker1.Location = new System.Drawing.Point(508, 69);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 32);
+            this.dateTimePicker1.Size = new System.Drawing.Size(223, 32);
             this.dateTimePicker1.TabIndex = 5;
             // 
             // comboBox4
@@ -137,7 +137,7 @@ namespace formIndex
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(264, 67);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(233, 34);
+            this.comboBox2.Size = new System.Drawing.Size(214, 34);
             this.comboBox2.TabIndex = 2;
             this.comboBox2.Text = "Select Destination";
             // 
