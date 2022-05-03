@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ComponentFactory.Krypton.Toolkit;
 
-namespace formIndex {
-    public partial class Form2 : KryptonForm {
-        public Form2() {
+namespace formIndex
+{
+    public partial class Home : Form
+    {
+        public Home()
+        {
             InitializeComponent();
         }
     }
