@@ -195,7 +195,7 @@ namespace formIndex
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.Silver;
+            this.button4.BackColor = System.Drawing.Color.DarkGray;
             this.button4.ForeColor = System.Drawing.Color.Black;
             this.button4.Location = new System.Drawing.Point(818, 48);
             this.button4.Name = "button4";
@@ -206,7 +206,7 @@ namespace formIndex
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.Silver;
+            this.button5.BackColor = System.Drawing.Color.DarkGray;
             this.button5.ForeColor = System.Drawing.Color.Black;
             this.button5.Location = new System.Drawing.Point(953, 48);
             this.button5.Name = "button5";
