@@ -34,8 +34,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>..\..\..\..\OneDrive\data\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,6 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\ContinueBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ContinueBooking.Designer.cs">
+      <DependentUpon>ContinueBooking.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ChooseFlight.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +71,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\ContinueBooking.resx">
+      <DependentUpon>ContinueBooking.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ChooseFlight.resx">
       <DependentUpon>ChooseFlight.cs</DependentUpon>
     </EmbeddedResource>
