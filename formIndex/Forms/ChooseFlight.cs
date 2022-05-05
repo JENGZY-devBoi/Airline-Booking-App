@@ -51,5 +51,20 @@ namespace formIndex
         {
 
         }
+
+        private void ChooseFlight_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblLanding3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
