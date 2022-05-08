@@ -41,18 +41,21 @@ namespace formIndex
             this.lblBookingFlight = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblBooking = new System.Windows.Forms.Label();
-            this.lblManageBooking = new System.Windows.Forms.Label();
-            this.lblTravelInfo = new System.Windows.Forms.Label();
-            this.lblSignIn = new System.Windows.Forms.Label();
             this.lblSignUp = new System.Windows.Forms.Label();
+            this.lblSignIn = new System.Windows.Forms.Label();
+            this.lblTravelInfo = new System.Windows.Forms.Label();
+            this.lblManageBooking = new System.Windows.Forms.Label();
+            this.lblBooking = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelHome.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelHome
             // 
             this.panelHome.BackColor = System.Drawing.Color.DarkViolet;
+            this.panelHome.Controls.Add(this.pictureBox1);
             this.panelHome.Controls.Add(this.lblSelectPass);
             this.panelHome.Controls.Add(this.lblTo);
             this.panelHome.Controls.Add(this.lblFrom);
@@ -62,7 +65,7 @@ namespace formIndex
             this.panelHome.Controls.Add(this.comboSelectOrigin);
             this.panelHome.Location = new System.Drawing.Point(50, 253);
             this.panelHome.Name = "panelHome";
-            this.panelHome.Size = new System.Drawing.Size(997, 278);
+            this.panelHome.Size = new System.Drawing.Size(997, 353);
             this.panelHome.TabIndex = 0;
             // 
             // lblSelectPass
@@ -176,38 +179,16 @@ namespace formIndex
             this.panel1.Size = new System.Drawing.Size(1116, 189);
             this.panel1.TabIndex = 14;
             // 
-            // lblBooking
+            // lblSignUp
             // 
-            this.lblBooking.BackColor = System.Drawing.Color.Gainsboro;
-            this.lblBooking.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBooking.Location = new System.Drawing.Point(319, 79);
-            this.lblBooking.Name = "lblBooking";
-            this.lblBooking.Size = new System.Drawing.Size(152, 36);
-            this.lblBooking.TabIndex = 26;
-            this.lblBooking.Text = "Booking";
-            this.lblBooking.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblManageBooking
-            // 
-            this.lblManageBooking.BackColor = System.Drawing.Color.Gainsboro;
-            this.lblManageBooking.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblManageBooking.Location = new System.Drawing.Point(480, 79);
-            this.lblManageBooking.Name = "lblManageBooking";
-            this.lblManageBooking.Size = new System.Drawing.Size(152, 39);
-            this.lblManageBooking.TabIndex = 27;
-            this.lblManageBooking.Text = "Manage Booking";
-            this.lblManageBooking.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTravelInfo
-            // 
-            this.lblTravelInfo.BackColor = System.Drawing.Color.Gainsboro;
-            this.lblTravelInfo.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTravelInfo.Location = new System.Drawing.Point(638, 80);
-            this.lblTravelInfo.Name = "lblTravelInfo";
-            this.lblTravelInfo.Size = new System.Drawing.Size(152, 39);
-            this.lblTravelInfo.TabIndex = 28;
-            this.lblTravelInfo.Text = "Travel Info";
-            this.lblTravelInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSignUp.BackColor = System.Drawing.Color.DarkGray;
+            this.lblSignUp.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSignUp.Location = new System.Drawing.Point(953, 52);
+            this.lblSignUp.Name = "lblSignUp";
+            this.lblSignUp.Size = new System.Drawing.Size(125, 63);
+            this.lblSignUp.TabIndex = 30;
+            this.lblSignUp.Text = "SIGN UP";
+            this.lblSignUp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblSignIn
             // 
@@ -220,16 +201,48 @@ namespace formIndex
             this.lblSignIn.Text = "SIGN IN";
             this.lblSignIn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblSignUp
+            // lblTravelInfo
             // 
-            this.lblSignUp.BackColor = System.Drawing.Color.DarkGray;
-            this.lblSignUp.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSignUp.Location = new System.Drawing.Point(953, 52);
-            this.lblSignUp.Name = "lblSignUp";
-            this.lblSignUp.Size = new System.Drawing.Size(125, 63);
-            this.lblSignUp.TabIndex = 30;
-            this.lblSignUp.Text = "SIGN UP";
-            this.lblSignUp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTravelInfo.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblTravelInfo.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTravelInfo.Location = new System.Drawing.Point(638, 80);
+            this.lblTravelInfo.Name = "lblTravelInfo";
+            this.lblTravelInfo.Size = new System.Drawing.Size(152, 39);
+            this.lblTravelInfo.TabIndex = 28;
+            this.lblTravelInfo.Text = "Travel Info";
+            this.lblTravelInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblManageBooking
+            // 
+            this.lblManageBooking.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblManageBooking.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblManageBooking.Location = new System.Drawing.Point(480, 79);
+            this.lblManageBooking.Name = "lblManageBooking";
+            this.lblManageBooking.Size = new System.Drawing.Size(152, 39);
+            this.lblManageBooking.TabIndex = 27;
+            this.lblManageBooking.Text = "Manage Booking";
+            this.lblManageBooking.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBooking
+            // 
+            this.lblBooking.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblBooking.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBooking.Location = new System.Drawing.Point(319, 79);
+            this.lblBooking.Name = "lblBooking";
+            this.lblBooking.Size = new System.Drawing.Size(152, 36);
+            this.lblBooking.TabIndex = 26;
+            this.lblBooking.Text = "Booking";
+            this.lblBooking.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(718, 115);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(310, 278);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
             // 
             // Home
             // 
@@ -249,6 +262,7 @@ namespace formIndex
             this.panelHome.ResumeLayout(false);
             this.panelHome.PerformLayout();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -272,5 +286,6 @@ namespace formIndex
         private System.Windows.Forms.Label lblBooking;
         private System.Windows.Forms.Label lblSignIn;
         private System.Windows.Forms.Label lblSignUp;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -13,7 +13,7 @@ namespace formIndex {
         static void Main() {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ChooseFlight());
+            Application.Run(new Home());
         }
     }
 }
