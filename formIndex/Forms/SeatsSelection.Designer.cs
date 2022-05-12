@@ -29,8 +29,41 @@ namespace formIndex
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
             this.F8 = new System.Windows.Forms.Label();
             this.F7 = new System.Windows.Forms.Label();
             this.E7 = new System.Windows.Forms.Label();
@@ -71,39 +104,8 @@ namespace formIndex
             this.B1 = new System.Windows.Forms.Label();
             this.A1 = new System.Windows.Forms.Label();
             this.C1 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
-            this.label61 = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lblChooseSeat = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -195,10 +197,324 @@ namespace formIndex
             this.panel1.Controls.Add(this.B1);
             this.panel1.Controls.Add(this.A1);
             this.panel1.Controls.Add(this.C1);
-            this.panel1.Location = new System.Drawing.Point(90, 180);
+            this.panel1.Location = new System.Drawing.Point(108, 119);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(967, 517);
+            this.panel1.Size = new System.Drawing.Size(967, 460);
             this.panel1.TabIndex = 30;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(107, 103);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(83, 28);
+            this.label11.TabIndex = 71;
+            this.label11.Text = "400 Bath";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(107, 203);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(82, 28);
+            this.label10.TabIndex = 70;
+            this.label10.Text = "280 Bath";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(107, 310);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(78, 28);
+            this.label9.TabIndex = 69;
+            this.label9.Text = "150 Bath";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(107, 338);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(105, 28);
+            this.label8.TabIndex = 68;
+            this.label8.Text = "Happy Seat\r\n";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(107, 232);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(123, 28);
+            this.label7.TabIndex = 67;
+            this.label7.Text = "Premium Seat\r\n";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(107, 131);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(204, 28);
+            this.label6.TabIndex = 66;
+            this.label6.Text = "Premium Seat Front Row";
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.Pink;
+            this.label4.Location = new System.Drawing.Point(27, 301);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(69, 65);
+            this.label4.TabIndex = 65;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.HotPink;
+            this.label3.Location = new System.Drawing.Point(27, 195);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 65);
+            this.label3.TabIndex = 64;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Crimson;
+            this.label2.Location = new System.Drawing.Point(27, 94);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(69, 65);
+            this.label2.TabIndex = 63;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(36, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(188, 42);
+            this.label1.TabIndex = 62;
+            this.label1.Text = "Seat Selection";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label63.Location = new System.Drawing.Point(888, 705);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(33, 42);
+            this.label63.TabIndex = 61;
+            this.label63.Text = "8";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label62.Location = new System.Drawing.Point(888, 614);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(31, 42);
+            this.label62.TabIndex = 60;
+            this.label62.Text = "7";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label61.Location = new System.Drawing.Point(888, 531);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(33, 42);
+            this.label61.TabIndex = 59;
+            this.label61.Text = "6";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label60.Location = new System.Drawing.Point(888, 445);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(33, 42);
+            this.label60.TabIndex = 58;
+            this.label60.Text = "5";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label59.Location = new System.Drawing.Point(888, 359);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(33, 42);
+            this.label59.TabIndex = 57;
+            this.label59.Text = "4";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.Location = new System.Drawing.Point(888, 281);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(32, 42);
+            this.label58.TabIndex = 56;
+            this.label58.Text = "3";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.Location = new System.Drawing.Point(888, 194);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(32, 42);
+            this.label57.TabIndex = 55;
+            this.label57.Text = "2";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.Location = new System.Drawing.Point(888, 108);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(26, 42);
+            this.label56.TabIndex = 54;
+            this.label56.Text = "1";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.Location = new System.Drawing.Point(338, 705);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(33, 42);
+            this.label55.TabIndex = 53;
+            this.label55.Text = "8";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Location = new System.Drawing.Point(336, 614);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(31, 42);
+            this.label54.TabIndex = 52;
+            this.label54.Text = "7";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.Location = new System.Drawing.Point(338, 531);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(33, 42);
+            this.label53.TabIndex = 51;
+            this.label53.Text = "6";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.Location = new System.Drawing.Point(338, 445);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(33, 42);
+            this.label52.TabIndex = 50;
+            this.label52.Text = "5";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.Location = new System.Drawing.Point(336, 359);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(33, 42);
+            this.label51.TabIndex = 49;
+            this.label51.Text = "4";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.Location = new System.Drawing.Point(336, 281);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(32, 42);
+            this.label50.TabIndex = 48;
+            this.label50.Text = "3";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.Location = new System.Drawing.Point(338, 194);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(32, 42);
+            this.label49.TabIndex = 47;
+            this.label49.Text = "2";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.Location = new System.Drawing.Point(338, 108);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(26, 42);
+            this.label48.TabIndex = 46;
+            this.label48.Text = "1";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.Location = new System.Drawing.Point(826, 127);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(37, 42);
+            this.label47.TabIndex = 45;
+            this.label47.Text = "G";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.Location = new System.Drawing.Point(750, 127);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(30, 42);
+            this.label46.TabIndex = 44;
+            this.label46.Text = "F";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Location = new System.Drawing.Point(674, 127);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(30, 42);
+            this.label45.TabIndex = 43;
+            this.label45.Text = "E";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.Location = new System.Drawing.Point(553, 39);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(37, 42);
+            this.label44.TabIndex = 42;
+            this.label44.Text = "C";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(479, 39);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(33, 42);
+            this.label43.TabIndex = 41;
+            this.label43.Text = "B";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(402, 39);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(34, 42);
+            this.label42.TabIndex = 40;
+            this.label42.Text = "A";
             // 
             // F8
             // 
@@ -520,339 +836,38 @@ namespace formIndex
             this.C1.Size = new System.Drawing.Size(69, 65);
             this.C1.TabIndex = 0;
             // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(402, 39);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(34, 42);
-            this.label42.TabIndex = 40;
-            this.label42.Text = "A";
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(479, 39);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(33, 42);
-            this.label43.TabIndex = 41;
-            this.label43.Text = "B";
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(553, 39);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(37, 42);
-            this.label44.TabIndex = 42;
-            this.label44.Text = "C";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(674, 127);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(30, 42);
-            this.label45.TabIndex = 43;
-            this.label45.Text = "E";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(750, 127);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(30, 42);
-            this.label46.TabIndex = 44;
-            this.label46.Text = "F";
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.Location = new System.Drawing.Point(826, 127);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(37, 42);
-            this.label47.TabIndex = 45;
-            this.label47.Text = "G";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.Location = new System.Drawing.Point(338, 108);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(26, 42);
-            this.label48.TabIndex = 46;
-            this.label48.Text = "1";
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.Location = new System.Drawing.Point(338, 194);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(32, 42);
-            this.label49.TabIndex = 47;
-            this.label49.Text = "2";
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.Location = new System.Drawing.Point(336, 281);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(32, 42);
-            this.label50.TabIndex = 48;
-            this.label50.Text = "3";
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.Location = new System.Drawing.Point(336, 359);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(33, 42);
-            this.label51.TabIndex = 49;
-            this.label51.Text = "4";
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.Location = new System.Drawing.Point(338, 445);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(33, 42);
-            this.label52.TabIndex = 50;
-            this.label52.Text = "5";
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.Location = new System.Drawing.Point(338, 531);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(33, 42);
-            this.label53.TabIndex = 51;
-            this.label53.Text = "6";
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.Location = new System.Drawing.Point(336, 614);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(31, 42);
-            this.label54.TabIndex = 52;
-            this.label54.Text = "7";
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.Location = new System.Drawing.Point(338, 705);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(33, 42);
-            this.label55.TabIndex = 53;
-            this.label55.Text = "8";
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.Location = new System.Drawing.Point(888, 108);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(26, 42);
-            this.label56.TabIndex = 54;
-            this.label56.Text = "1";
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.Location = new System.Drawing.Point(888, 194);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(32, 42);
-            this.label57.TabIndex = 55;
-            this.label57.Text = "2";
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.Location = new System.Drawing.Point(888, 281);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(32, 42);
-            this.label58.TabIndex = 56;
-            this.label58.Text = "3";
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label59.Location = new System.Drawing.Point(888, 359);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(33, 42);
-            this.label59.TabIndex = 57;
-            this.label59.Text = "4";
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label60.Location = new System.Drawing.Point(888, 445);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(33, 42);
-            this.label60.TabIndex = 58;
-            this.label60.Text = "5";
-            // 
-            // label61
-            // 
-            this.label61.AutoSize = true;
-            this.label61.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label61.Location = new System.Drawing.Point(888, 531);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(33, 42);
-            this.label61.TabIndex = 59;
-            this.label61.Text = "6";
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label62.Location = new System.Drawing.Point(888, 614);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(31, 42);
-            this.label62.TabIndex = 60;
-            this.label62.Text = "7";
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label63.Location = new System.Drawing.Point(888, 705);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(33, 42);
-            this.label63.TabIndex = 61;
-            this.label63.Text = "8";
-            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.button1.Location = new System.Drawing.Point(52, 119);
+            this.button1.Location = new System.Drawing.Point(28, 119);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(61, 37);
             this.button1.TabIndex = 31;
             this.button1.Text = "<<";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // lblChooseSeat
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(36, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(188, 42);
-            this.label1.TabIndex = 62;
-            this.label1.Text = "Seat Selection";
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.Crimson;
-            this.label2.Location = new System.Drawing.Point(27, 94);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 65);
-            this.label2.TabIndex = 63;
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.HotPink;
-            this.label3.Location = new System.Drawing.Point(27, 195);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 65);
-            this.label3.TabIndex = 64;
-            // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.Color.Pink;
-            this.label4.Location = new System.Drawing.Point(27, 301);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 65);
-            this.label4.TabIndex = 65;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(107, 131);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(204, 28);
-            this.label6.TabIndex = 66;
-            this.label6.Text = "Premium Seat Front Row";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(107, 232);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(123, 28);
-            this.label7.TabIndex = 67;
-            this.label7.Text = "Premium Seat\r\n";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(107, 338);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(105, 28);
-            this.label8.TabIndex = 68;
-            this.label8.Text = "Happy Seat\r\n";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(107, 310);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(78, 28);
-            this.label9.TabIndex = 69;
-            this.label9.Text = "150 Bath";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(107, 203);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(82, 28);
-            this.label10.TabIndex = 70;
-            this.label10.Text = "280 Bath";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(107, 103);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(83, 28);
-            this.label11.TabIndex = 71;
-            this.label11.Text = "400 Bath";
+            this.lblChooseSeat.BackColor = System.Drawing.Color.RosyBrown;
+            this.lblChooseSeat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lblChooseSeat.Location = new System.Drawing.Point(902, 617);
+            this.lblChooseSeat.Name = "lblChooseSeat";
+            this.lblChooseSeat.Size = new System.Drawing.Size(153, 40);
+            this.lblChooseSeat.TabIndex = 33;
+            this.lblChooseSeat.Text = "Choose";
+            this.lblChooseSeat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkViolet;
-            this.ClientSize = new System.Drawing.Size(1117, 773);
+            this.ClientSize = new System.Drawing.Size(1117, 696);
+            this.Controls.Add(this.lblChooseSeat);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Seat Selection";
@@ -940,5 +955,6 @@ namespace formIndex
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblChooseSeat;
     }
 }
