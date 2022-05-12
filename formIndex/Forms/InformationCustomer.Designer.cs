@@ -62,6 +62,8 @@ namespace formIndex
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -73,20 +75,19 @@ namespace formIndex
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblTotalPrice = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
+            this.lblChooseSeat = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -194,18 +195,18 @@ namespace formIndex
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.LavenderBlush;
             this.label3.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(444, 190);
+            this.label3.Location = new System.Drawing.Point(640, 190);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 28);
+            this.label3.Size = new System.Drawing.Size(91, 28);
             this.label3.TabIndex = 27;
-            this.label3.Text = "seat";
+            this.label3.Text = "Complete";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.LavenderBlush;
             this.label4.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(643, 190);
+            this.label4.Location = new System.Drawing.Point(424, 190);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(83, 28);
             this.label4.TabIndex = 28;
@@ -450,6 +451,28 @@ namespace formIndex
             this.panel2.Size = new System.Drawing.Size(375, 176);
             this.panel2.TabIndex = 37;
             // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label16.Location = new System.Drawing.Point(271, 145);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(46, 31);
+            this.label16.TabIndex = 34;
+            this.label16.Text = "280";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label15.Location = new System.Drawing.Point(282, 117);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(35, 31);
+            this.label15.TabIndex = 33;
+            this.label15.Text = "42";
+            // 
             // label27
             // 
             this.label27.AutoSize = true;
@@ -574,6 +597,98 @@ namespace formIndex
             this.panel3.Size = new System.Drawing.Size(375, 231);
             this.panel3.TabIndex = 38;
             // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(209, 126);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(36, 31);
+            this.label34.TabIndex = 29;
+            this.label34.Text = "To";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label33.Location = new System.Drawing.Point(84, 188);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(232, 28);
+            this.label33.TabIndex = 28;
+            this.label33.Text = "Hat Yai International Airport";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(209, 154);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(86, 36);
+            this.label31.TabIndex = 27;
+            this.label31.Text = "Hatyai";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(152, 157);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(57, 31);
+            this.label30.TabIndex = 26;
+            this.label30.Text = "18:30";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label29.Location = new System.Drawing.Point(173, 96);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(143, 28);
+            this.label29.TabIndex = 25;
+            this.label29.Text = "Suwanno Airport";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(152, 68);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(51, 31);
+            this.label28.TabIndex = 24;
+            this.label28.Text = "17:15";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(209, 65);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(108, 36);
+            this.label21.TabIndex = 23;
+            this.label21.Text = "Bangkok";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(21, 126);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(117, 31);
+            this.label18.TabIndex = 16;
+            this.label18.Text = "Thai Air Key";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(20, 18);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(157, 42);
+            this.label17.TabIndex = 1;
+            this.label17.Text = "Filght Detail";
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.GhostWhite;
@@ -604,126 +719,24 @@ namespace formIndex
             this.label32.TabIndex = 0;
             this.label32.Text = "Total Price        \r\n";
             // 
-            // label15
+            // lblChooseSeat
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label15.Location = new System.Drawing.Point(282, 117);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(35, 31);
-            this.label15.TabIndex = 33;
-            this.label15.Text = "42";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label16.Location = new System.Drawing.Point(271, 145);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(46, 31);
-            this.label16.TabIndex = 34;
-            this.label16.Text = "280";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(20, 18);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(157, 42);
-            this.label17.TabIndex = 1;
-            this.label17.Text = "Filght Detail";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(21, 126);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(117, 31);
-            this.label18.TabIndex = 16;
-            this.label18.Text = "Thai Air Key";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(209, 65);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(108, 36);
-            this.label21.TabIndex = 23;
-            this.label21.Text = "Bangkok";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(152, 68);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(51, 31);
-            this.label28.TabIndex = 24;
-            this.label28.Text = "17:15";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label29.Location = new System.Drawing.Point(173, 96);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(143, 28);
-            this.label29.TabIndex = 25;
-            this.label29.Text = "Suwanno Airport";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(152, 157);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(57, 31);
-            this.label30.TabIndex = 26;
-            this.label30.Text = "18:30";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(209, 154);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(86, 36);
-            this.label31.TabIndex = 27;
-            this.label31.Text = "Hatyai";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label33.Location = new System.Drawing.Point(84, 188);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(232, 28);
-            this.label33.TabIndex = 28;
-            this.label33.Text = "Hat Yai International Airport";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(209, 126);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(36, 31);
-            this.label34.TabIndex = 29;
-            this.label34.Text = "To";
+            this.lblChooseSeat.BackColor = System.Drawing.Color.RosyBrown;
+            this.lblChooseSeat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lblChooseSeat.Location = new System.Drawing.Point(41, 694);
+            this.lblChooseSeat.Name = "lblChooseSeat";
+            this.lblChooseSeat.Size = new System.Drawing.Size(153, 40);
+            this.lblChooseSeat.TabIndex = 40;
+            this.lblChooseSeat.Text = "Continue";
+            this.lblChooseSeat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // InformationCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkViolet;
-            this.ClientSize = new System.Drawing.Size(1117, 854);
+            this.ClientSize = new System.Drawing.Size(1117, 764);
+            this.Controls.Add(this.lblChooseSeat);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -830,5 +843,6 @@ namespace formIndex
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label lblChooseSeat;
     }
 }
