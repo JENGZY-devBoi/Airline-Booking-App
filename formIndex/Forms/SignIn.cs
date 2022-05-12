@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace formIndex
 {
-    public partial class Form2 : Form
+    public partial class SignIn : Form
     {
-        public Form2()
+        public SignIn()
         {
             InitializeComponent();
         }
