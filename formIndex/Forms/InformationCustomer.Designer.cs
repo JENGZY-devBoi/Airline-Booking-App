@@ -45,21 +45,20 @@ namespace formIndex
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.label22 = new System.Windows.Forms.Label();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.DateOfBirth = new System.Windows.Forms.DateTimePicker();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textEmail = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textNumber = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textSurName = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textName = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboTitle = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
@@ -87,7 +86,8 @@ namespace formIndex
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblTotalPrice = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
-            this.lblChooseSeat = new System.Windows.Forms.Label();
+            this.lblContinue = new System.Windows.Forms.Label();
+            this.lblSignIn = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -266,16 +266,6 @@ namespace formIndex
             this.pictureBox7.TabIndex = 33;
             this.pictureBox7.TabStop = false;
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(882, 151);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(109, 50);
-            this.button1.TabIndex = 35;
-            this.button1.Text = "SIGN IN";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // label22
             // 
             this.label22.AutoSize = true;
@@ -299,17 +289,17 @@ namespace formIndex
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.DateOfBirth);
             this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.textEmail);
             this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.textNumber);
             this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.textSurName);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.textName);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.comboTitle);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.pictureBox12);
             this.panel1.Controls.Add(this.label22);
@@ -318,13 +308,13 @@ namespace formIndex
             this.panel1.Size = new System.Drawing.Size(649, 413);
             this.panel1.TabIndex = 36;
             // 
-            // dateTimePicker1
+            // DateOfBirth
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(168, 300);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(197, 31);
-            this.dateTimePicker1.TabIndex = 16;
+            this.DateOfBirth.Font = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateOfBirth.Location = new System.Drawing.Point(168, 300);
+            this.DateOfBirth.Name = "DateOfBirth";
+            this.DateOfBirth.Size = new System.Drawing.Size(197, 31);
+            this.DateOfBirth.TabIndex = 16;
             // 
             // label13
             // 
@@ -336,13 +326,13 @@ namespace formIndex
             this.label13.TabIndex = 15;
             this.label13.Text = "Date of Birth *";
             // 
-            // textBox4
+            // textEmail
             // 
-            this.textBox4.BackColor = System.Drawing.Color.LavenderBlush;
-            this.textBox4.Location = new System.Drawing.Point(97, 245);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(431, 26);
-            this.textBox4.TabIndex = 14;
+            this.textEmail.BackColor = System.Drawing.Color.LavenderBlush;
+            this.textEmail.Location = new System.Drawing.Point(97, 245);
+            this.textEmail.Name = "textEmail";
+            this.textEmail.Size = new System.Drawing.Size(431, 26);
+            this.textEmail.TabIndex = 14;
             // 
             // label12
             // 
@@ -354,13 +344,13 @@ namespace formIndex
             this.label12.TabIndex = 13;
             this.label12.Text = "Email *";
             // 
-            // textBox3
+            // textNumber
             // 
-            this.textBox3.BackColor = System.Drawing.Color.LavenderBlush;
-            this.textBox3.Location = new System.Drawing.Point(203, 195);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(341, 26);
-            this.textBox3.TabIndex = 12;
+            this.textNumber.BackColor = System.Drawing.Color.LavenderBlush;
+            this.textNumber.Location = new System.Drawing.Point(203, 195);
+            this.textNumber.Name = "textNumber";
+            this.textNumber.Size = new System.Drawing.Size(341, 26);
+            this.textNumber.TabIndex = 12;
             // 
             // label11
             // 
@@ -372,13 +362,13 @@ namespace formIndex
             this.label11.TabIndex = 11;
             this.label11.Text = "Mobile Number *";
             // 
-            // textBox2
+            // textSurName
             // 
-            this.textBox2.BackColor = System.Drawing.Color.LavenderBlush;
-            this.textBox2.Location = new System.Drawing.Point(432, 140);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(195, 26);
-            this.textBox2.TabIndex = 10;
+            this.textSurName.BackColor = System.Drawing.Color.LavenderBlush;
+            this.textSurName.Location = new System.Drawing.Point(432, 140);
+            this.textSurName.Name = "textSurName";
+            this.textSurName.Size = new System.Drawing.Size(195, 26);
+            this.textSurName.TabIndex = 10;
             // 
             // label10
             // 
@@ -390,13 +380,13 @@ namespace formIndex
             this.label10.TabIndex = 9;
             this.label10.Text = "Surname *";
             // 
-            // textBox1
+            // textName
             // 
-            this.textBox1.BackColor = System.Drawing.Color.LavenderBlush;
-            this.textBox1.Location = new System.Drawing.Point(97, 137);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(201, 26);
-            this.textBox1.TabIndex = 8;
+            this.textName.BackColor = System.Drawing.Color.LavenderBlush;
+            this.textName.Location = new System.Drawing.Point(97, 137);
+            this.textName.Name = "textName";
+            this.textName.Size = new System.Drawing.Size(201, 26);
+            this.textName.TabIndex = 8;
             // 
             // label9
             // 
@@ -408,18 +398,18 @@ namespace formIndex
             this.label9.TabIndex = 7;
             this.label9.Text = "Name *";
             // 
-            // comboBox1
+            // comboTitle
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.LavenderBlush;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboTitle.BackColor = System.Drawing.Color.LavenderBlush;
+            this.comboTitle.FormattingEnabled = true;
+            this.comboTitle.Items.AddRange(new object[] {
             "Mr",
             "Mrs",
             "Ms"});
-            this.comboBox1.Location = new System.Drawing.Point(83, 91);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(77, 28);
-            this.comboBox1.TabIndex = 6;
+            this.comboTitle.Location = new System.Drawing.Point(83, 91);
+            this.comboTitle.Name = "comboTitle";
+            this.comboTitle.Size = new System.Drawing.Size(77, 28);
+            this.comboTitle.TabIndex = 6;
             // 
             // label8
             // 
@@ -719,16 +709,27 @@ namespace formIndex
             this.label32.TabIndex = 0;
             this.label32.Text = "Total Price        \r\n";
             // 
-            // lblChooseSeat
+            // lblContinue
             // 
-            this.lblChooseSeat.BackColor = System.Drawing.Color.RosyBrown;
-            this.lblChooseSeat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblChooseSeat.Location = new System.Drawing.Point(41, 694);
-            this.lblChooseSeat.Name = "lblChooseSeat";
-            this.lblChooseSeat.Size = new System.Drawing.Size(153, 40);
-            this.lblChooseSeat.TabIndex = 40;
-            this.lblChooseSeat.Text = "Continue";
-            this.lblChooseSeat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblContinue.BackColor = System.Drawing.Color.RosyBrown;
+            this.lblContinue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lblContinue.Location = new System.Drawing.Point(41, 694);
+            this.lblContinue.Name = "lblContinue";
+            this.lblContinue.Size = new System.Drawing.Size(153, 40);
+            this.lblContinue.TabIndex = 40;
+            this.lblContinue.Text = "Continue";
+            this.lblContinue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblSignIn
+            // 
+            this.lblSignIn.BackColor = System.Drawing.Color.DarkGray;
+            this.lblSignIn.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSignIn.Location = new System.Drawing.Point(934, 155);
+            this.lblSignIn.Name = "lblSignIn";
+            this.lblSignIn.Size = new System.Drawing.Size(107, 49);
+            this.lblSignIn.TabIndex = 41;
+            this.lblSignIn.Text = "SIGN IN";
+            this.lblSignIn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // InformationCustomer
             // 
@@ -736,12 +737,12 @@ namespace formIndex
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkViolet;
             this.ClientSize = new System.Drawing.Size(1117, 764);
-            this.Controls.Add(this.lblChooseSeat);
+            this.Controls.Add(this.lblSignIn);
+            this.Controls.Add(this.lblContinue);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
@@ -801,21 +802,20 @@ namespace formIndex
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textSurName;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textName;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.ComboBox comboTitle;
+        private System.Windows.Forms.TextBox textNumber;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker DateOfBirth;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textEmail;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label27;
@@ -843,6 +843,7 @@ namespace formIndex
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label lblChooseSeat;
+        private System.Windows.Forms.Label lblContinue;
+        private System.Windows.Forms.Label lblSignIn;
     }
 }

@@ -34,6 +34,7 @@ namespace formIndex
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblPassward = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.buttonBackHome = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,12 +84,23 @@ namespace formIndex
             this.label2.Text = "Login";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // buttonBackHome
+            // 
+            this.buttonBackHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.buttonBackHome.Location = new System.Drawing.Point(34, 43);
+            this.buttonBackHome.Name = "buttonBackHome";
+            this.buttonBackHome.Size = new System.Drawing.Size(61, 37);
+            this.buttonBackHome.TabIndex = 21;
+            this.buttonBackHome.Text = "<<";
+            this.buttonBackHome.UseVisualStyleBackColor = true;
+            // 
             // SignIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkViolet;
             this.ClientSize = new System.Drawing.Size(1117, 696);
+            this.Controls.Add(this.buttonBackHome);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblPassward);
             this.Controls.Add(this.lblEmail);
@@ -108,5 +120,6 @@ namespace formIndex
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblPassward;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button buttonBackHome;
     }
 }
