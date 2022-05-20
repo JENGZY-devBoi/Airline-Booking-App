@@ -57,46 +57,46 @@
     <Compile Include="ManageBooking.Designer.cs">
       <DependentUpon>ManageBooking.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\SignUp.cs">
+    <Compile Include="Forms\SignUp\SignUp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\SignUp.Designer.cs">
+    <Compile Include="Forms\SignUp\SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\SignIn.cs">
+    <Compile Include="Forms\SignIn\SignIn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\SignIn.Designer.cs">
+    <Compile Include="Forms\SignIn\SignIn.Designer.cs">
       <DependentUpon>SignIn.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\SeatsSelection.cs">
+    <Compile Include="Forms\SelectSeat\SeatsSelection.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\SeatsSelection.Designer.cs">
+    <Compile Include="Forms\SelectSeat\SeatsSelection.Designer.cs">
       <DependentUpon>SeatsSelection.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\InformationCustomer.cs">
+    <Compile Include="Forms\CustomerInfo\InformationCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\InformationCustomer.Designer.cs">
+    <Compile Include="Forms\CustomerInfo\InformationCustomer.Designer.cs">
       <DependentUpon>InformationCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ContinueBooking.cs">
+    <Compile Include="Forms\BookingDetail\ContinueBooking.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ContinueBooking.Designer.cs">
+    <Compile Include="Forms\BookingDetail\ContinueBooking.Designer.cs">
       <DependentUpon>ContinueBooking.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ChooseFlight.cs">
+    <Compile Include="Forms\ChooseFlight\ChooseFlight.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ChooseFlight.Designer.cs">
+    <Compile Include="Forms\ChooseFlight\ChooseFlight.Designer.cs">
       <DependentUpon>ChooseFlight.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Home.cs">
+    <Compile Include="Forms\Home\Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Home.Designer.cs">
+    <Compile Include="Forms\Home\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -104,25 +104,25 @@
     <EmbeddedResource Include="ManageBooking.resx">
       <DependentUpon>ManageBooking.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\SeatsSelection.resx">
+    <EmbeddedResource Include="Forms\SelectSeat\SeatsSelection.resx">
       <DependentUpon>SeatsSelection.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\InformationCustomer.resx">
+    <EmbeddedResource Include="Forms\CustomerInfo\InformationCustomer.resx">
       <DependentUpon>InformationCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ContinueBooking.resx">
+    <EmbeddedResource Include="Forms\BookingDetail\ContinueBooking.resx">
       <DependentUpon>ContinueBooking.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ChooseFlight.resx">
+    <EmbeddedResource Include="Forms\ChooseFlight\ChooseFlight.resx">
       <DependentUpon>ChooseFlight.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Home.resx">
+    <EmbeddedResource Include="Forms\Home\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\SignIn.resx">
+    <EmbeddedResource Include="Forms\SignIn\SignIn.resx">
       <DependentUpon>SignIn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\SignUp.resx">
+    <EmbeddedResource Include="Forms\SignUp\SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
