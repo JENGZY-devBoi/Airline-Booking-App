@@ -51,78 +51,81 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ManageBooking.cs">
+    <Compile Include="flightData.cs" />
+    <Compile Include="seatData.cs" />
+    <Compile Include="src\DB Config\dbConfig.cs" />
+    <Compile Include="src\Forms\Management Booking\ManageBooking.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManageBooking.Designer.cs">
+    <Compile Include="src\Forms\Management Booking\ManageBooking.Designer.cs">
       <DependentUpon>ManageBooking.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\SignUp\SignUp.cs">
+    <Compile Include="src\Forms\SignUp\SignUp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\SignUp\SignUp.Designer.cs">
+    <Compile Include="src\Forms\SignUp\SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\SignIn\SignIn.cs">
+    <Compile Include="src\Forms\SignIn\SignIn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\SignIn\SignIn.Designer.cs">
+    <Compile Include="src\Forms\SignIn\SignIn.Designer.cs">
       <DependentUpon>SignIn.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\SelectSeat\SeatsSelection.cs">
+    <Compile Include="src\Forms\SelectSeat\SeatsSelection.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\SelectSeat\SeatsSelection.Designer.cs">
+    <Compile Include="src\Forms\SelectSeat\SeatsSelection.Designer.cs">
       <DependentUpon>SeatsSelection.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\CustomerInfo\InformationCustomer.cs">
+    <Compile Include="src\Forms\CustomerInfo\InformationCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\CustomerInfo\InformationCustomer.Designer.cs">
+    <Compile Include="src\Forms\CustomerInfo\InformationCustomer.Designer.cs">
       <DependentUpon>InformationCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\BookingDetail\ContinueBooking.cs">
+    <Compile Include="src\Forms\BookingDetail\ContinueBooking.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\BookingDetail\ContinueBooking.Designer.cs">
+    <Compile Include="src\Forms\BookingDetail\ContinueBooking.Designer.cs">
       <DependentUpon>ContinueBooking.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ChooseFlight\ChooseFlight.cs">
+    <Compile Include="src\Forms\ChooseFlight\ChooseFlight.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ChooseFlight\ChooseFlight.Designer.cs">
+    <Compile Include="src\Forms\ChooseFlight\ChooseFlight.Designer.cs">
       <DependentUpon>ChooseFlight.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Home\Home.cs">
+    <Compile Include="src\Forms\Home\Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Home\Home.Designer.cs">
+    <Compile Include="src\Forms\Home\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ManageBooking.resx">
+    <EmbeddedResource Include="src\Forms\Management Booking\ManageBooking.resx">
       <DependentUpon>ManageBooking.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\SelectSeat\SeatsSelection.resx">
+    <EmbeddedResource Include="src\Forms\SelectSeat\SeatsSelection.resx">
       <DependentUpon>SeatsSelection.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\CustomerInfo\InformationCustomer.resx">
+    <EmbeddedResource Include="src\Forms\CustomerInfo\InformationCustomer.resx">
       <DependentUpon>InformationCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\BookingDetail\ContinueBooking.resx">
+    <EmbeddedResource Include="src\Forms\BookingDetail\ContinueBooking.resx">
       <DependentUpon>ContinueBooking.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ChooseFlight\ChooseFlight.resx">
+    <EmbeddedResource Include="src\Forms\ChooseFlight\ChooseFlight.resx">
       <DependentUpon>ChooseFlight.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Home\Home.resx">
+    <EmbeddedResource Include="src\Forms\Home\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\SignIn\SignIn.resx">
+    <EmbeddedResource Include="src\Forms\SignIn\SignIn.resx">
       <DependentUpon>SignIn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\SignUp\SignUp.resx">
+    <EmbeddedResource Include="src\Forms\SignUp\SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -147,6 +150,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\Data\Flight Data\" />
+    <Folder Include="src\Data\Seat Data\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
