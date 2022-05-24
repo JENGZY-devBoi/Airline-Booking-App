@@ -24,6 +24,7 @@ namespace formIndex {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            this.components = new System.ComponentModel.Container();
             this.label5 = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Label();
             this.btnSuccess = new System.Windows.Forms.Label();
@@ -45,15 +46,16 @@ namespace formIndex {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textLname = new System.Windows.Forms.TextBox();
-            this.textFname = new System.Windows.Forms.TextBox();
+            this.txtCVC = new System.Windows.Forms.TextBox();
+            this.txtMas = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtFname = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtLname = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtExpir = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.timerTimeNow = new System.Windows.Forms.Timer(this.components);
             this.panel8.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -96,8 +98,9 @@ namespace formIndex {
             this.btnSuccess.Name = "btnSuccess";
             this.btnSuccess.Size = new System.Drawing.Size(163, 46);
             this.btnSuccess.TabIndex = 0;
-            this.btnSuccess.Text = "Success";
+            this.btnSuccess.Text = "Check out";
             this.btnSuccess.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSuccess.Click += new System.EventHandler(this.btnSuccess_Click);
             // 
             // panel8
             // 
@@ -290,11 +293,11 @@ namespace formIndex {
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.textFname);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textLname);
+            this.panel1.Controls.Add(this.txtLname);
+            this.panel1.Controls.Add(this.txtFname);
+            this.panel1.Controls.Add(this.txtMas);
+            this.panel1.Controls.Add(this.txtExpir);
+            this.panel1.Controls.Add(this.txtCVC);
             this.panel1.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(621, 26);
             this.panel1.Name = "panel1";
@@ -323,22 +326,24 @@ namespace formIndex {
             this.label12.TabIndex = 26;
             this.label12.Text = "CVC";
             // 
-            // textLname
+            // txtCVC
             // 
-            this.textLname.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textLname.Location = new System.Drawing.Point(198, 151);
-            this.textLname.MaxLength = 3;
-            this.textLname.Name = "textLname";
-            this.textLname.Size = new System.Drawing.Size(64, 35);
-            this.textLname.TabIndex = 28;
+            this.txtCVC.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCVC.Location = new System.Drawing.Point(198, 151);
+            this.txtCVC.MaxLength = 3;
+            this.txtCVC.Name = "txtCVC";
+            this.txtCVC.Size = new System.Drawing.Size(64, 35);
+            this.txtCVC.TabIndex = 28;
+            this.txtCVC.Text = "010";
             // 
-            // textFname
+            // txtMas
             // 
-            this.textFname.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textFname.Location = new System.Drawing.Point(198, 93);
-            this.textFname.Name = "textFname";
-            this.textFname.Size = new System.Drawing.Size(278, 35);
-            this.textFname.TabIndex = 25;
+            this.txtMas.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMas.Location = new System.Drawing.Point(198, 93);
+            this.txtMas.Name = "txtMas";
+            this.txtMas.Size = new System.Drawing.Size(278, 35);
+            this.txtMas.TabIndex = 25;
+            this.txtMas.Text = "1234567890123";
             // 
             // label9
             // 
@@ -351,13 +356,13 @@ namespace formIndex {
             this.label9.Text = "Debit/Master card";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox1
+            // txtFname
             // 
-            this.textBox1.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(198, 267);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(278, 35);
-            this.textBox1.TabIndex = 25;
+            this.txtFname.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFname.Location = new System.Drawing.Point(198, 267);
+            this.txtFname.Name = "txtFname";
+            this.txtFname.Size = new System.Drawing.Size(278, 35);
+            this.txtFname.TabIndex = 25;
             // 
             // label8
             // 
@@ -370,13 +375,13 @@ namespace formIndex {
             this.label8.Text = "First name";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox2
+            // txtLname
             // 
-            this.textBox2.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(198, 325);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(278, 35);
-            this.textBox2.TabIndex = 25;
+            this.txtLname.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLname.Location = new System.Drawing.Point(198, 325);
+            this.txtLname.Name = "txtLname";
+            this.txtLname.Size = new System.Drawing.Size(278, 35);
+            this.txtLname.TabIndex = 25;
             // 
             // label10
             // 
@@ -389,25 +394,31 @@ namespace formIndex {
             this.label10.Text = "Last name";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox3
+            // txtExpir
             // 
-            this.textBox3.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(198, 209);
-            this.textBox3.MaxLength = 3;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(64, 35);
-            this.textBox3.TabIndex = 28;
+            this.txtExpir.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtExpir.Location = new System.Drawing.Point(198, 209);
+            this.txtExpir.MaxLength = 3;
+            this.txtExpir.Name = "txtExpir";
+            this.txtExpir.Size = new System.Drawing.Size(64, 35);
+            this.txtExpir.TabIndex = 28;
+            this.txtExpir.Text = "5/23";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.White;
             this.label11.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(144, 216);
+            this.label11.Location = new System.Drawing.Point(59, 216);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(47, 28);
+            this.label11.Size = new System.Drawing.Size(132, 28);
             this.label11.TabIndex = 26;
-            this.label11.Text = "CVC";
+            this.label11.Text = "Expiration date";
+            // 
+            // timerTimeNow
+            // 
+            this.timerTimeNow.Enabled = true;
+            this.timerTimeNow.Tick += new System.EventHandler(this.timerTimeNow_Tick);
             // 
             // Payment
             // 
@@ -421,6 +432,7 @@ namespace formIndex {
             this.Name = "Payment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Payment";
+            this.Load += new System.EventHandler(this.Payment_Load);
             this.panel8.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
@@ -459,10 +471,11 @@ namespace formIndex {
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textFname;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textLname;
+        private System.Windows.Forms.TextBox txtLname;
+        private System.Windows.Forms.TextBox txtFname;
+        private System.Windows.Forms.TextBox txtMas;
+        private System.Windows.Forms.TextBox txtExpir;
+        private System.Windows.Forms.TextBox txtCVC;
+        private System.Windows.Forms.Timer timerTimeNow;
     }
 }
