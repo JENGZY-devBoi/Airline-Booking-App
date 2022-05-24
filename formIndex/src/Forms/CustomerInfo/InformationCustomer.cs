@@ -17,24 +17,89 @@ namespace formIndex
             InitializeComponent();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void InformationCustomer_Load(object sender, EventArgs e)
         {
-
+            init();
         }
 
-        private void label22_Click(object sender, EventArgs e)
-        {
+        private void btnBack_Click(object sender, EventArgs e) {
+            // GO TO PREVIOUS FORM
+            var form = new SeatsSelect();
+            form.Show();
+            this.Hide();
+        }
 
+        private void btnConfirm_Click(object sender, EventArgs e) {
+            if (validFill()) submit();
+        }
+
+        private bool validFill() {
+            // Valid fill complete info
+            if (comboTitle.SelectedItem == null ||
+                textFname.Text == "" ||
+                textLname.Text == "" ||
+                textEmail.Text == "" ||
+                comboEmail.Text == "") {
+                // Check
+                // Console.WriteLine("Please fill complete information.");
+                MessageBox.Show
+                    (
+                        "Please fill complete information.",
+                        "Error",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error
+                    );
+                return false;
+            }
+            return true;
+        }
+
+        private void submit() {
+            //Console.WriteLine(dateTimeDOB.Value.ToString().Split(' ')[0]);
+            passengerData.passengerTitle = comboTitle.SelectedItem.ToString();
+            passengerData.passengerFname = textFname.Text;
+            passengerData.passengerLname = textLname.Text;
+            passengerData.passengerDOB = dateTimeDOB.Value.ToString().Split(' ')[0];
+            passengerData.passengerEmail = textEmail.Text + "@" + comboEmail.SelectedItem.ToString();
+
+
+            var form = new ContinueBooking();
+            form.Show();
+            this.Hide();
+        }
+
+        private void init() {
+            // Set the Format type and the CustomFormat string.
+            dateTimeDOB.Format = DateTimePickerFormat.Custom;
+            dateTimeDOB.CustomFormat = "MM - dd - yyyy";
+
+            // Set passenger data (when back)
+            textFname.Text = passengerData.passengerFname;
+            textLname.Text = passengerData.passengerLname;
+            if (passengerData.passengerEmail != null) {
+                comboTitle.Text = passengerData.passengerTitle;
+                textEmail.Text = passengerData.passengerEmail.Split('@')[0];
+                comboEmail.Text = passengerData.passengerEmail.Split('@')[1];
+                dateTimeDOB.Value = new DateTime
+                    (
+                        Convert.ToInt32(passengerData.passengerDOB.Split('/')[2]), // Year
+                        Convert.ToInt32(passengerData.passengerDOB.Split('/')[0]), // Month
+                        Convert.ToInt32(passengerData.passengerDOB.Split('/')[1]) // Day
+                    );
+            }
+
+            // Sign in code
+            
+        }
+
+        private void btnClear_Click(object sender, EventArgs e) {
+            textEmail.Text = textFname.Text = textLname.Text = "";
+            dateTimeDOB.Value = DateTime.Now;
+            passengerData.passengerDOB = null;
+            passengerData.passengerEmail = null;
+            passengerData.passengerFname = null;
+            passengerData.passengerLname = null;
+            passengerData.passengerTitle = null;
         }
     }
 }

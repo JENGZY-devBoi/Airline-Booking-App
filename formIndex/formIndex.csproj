@@ -51,8 +51,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="flightData.cs" />
-    <Compile Include="seatData.cs" />
+    <Compile Include="src\Forms\Payment\Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Forms\Payment\.Designer.cs">
+      <DependentUpon>Payment.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Data\Flight Data\flightData.cs" />
+    <Compile Include="src\Data\Passenger Data\passengerData.cs" />
+    <Compile Include="src\Data\Seat Data\seatData.cs" />
     <Compile Include="src\DB Config\dbConfig.cs" />
     <Compile Include="src\Forms\Management Booking\ManageBooking.cs">
       <SubType>Form</SubType>
@@ -107,6 +115,9 @@
     <EmbeddedResource Include="src\Forms\Management Booking\ManageBooking.resx">
       <DependentUpon>ManageBooking.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="src\Forms\Payment\Payment.resx">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\Forms\SelectSeat\SeatsSelection.resx">
       <DependentUpon>SeatsSelection.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,9 +162,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="src\Data\Flight Data\" />
-    <Folder Include="src\Data\Seat Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
