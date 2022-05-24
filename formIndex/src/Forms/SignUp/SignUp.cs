@@ -22,14 +22,14 @@ namespace formIndex
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
+        private void btnClear_Click(object sender, EventArgs e) {
 
         }
 
-        private void label11_Click(object sender, EventArgs e)
-        {
-
+        private void btnBack_Click(object sender, EventArgs e) {
+            var form = new Home();
+            form.Show();
+            this.Hide();
         }
     }
 }

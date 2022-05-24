@@ -31,19 +31,18 @@ namespace formIndex
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.panelHome = new System.Windows.Forms.Panel();
+            this.btnSearch = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.lblTo = new System.Windows.Forms.Label();
             this.lblFrom = new System.Windows.Forms.Label();
+            this.comboDepart = new System.Windows.Forms.ComboBox();
             this.comboTo = new System.Windows.Forms.ComboBox();
             this.comboSelectOrigin = new System.Windows.Forms.ComboBox();
             this.lblBookingFlight = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblSignUp = new System.Windows.Forms.Label();
             this.lblSignIn = new System.Windows.Forms.Label();
-            this.btnSearch = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboDepart = new System.Windows.Forms.ComboBox();
             this.panelHome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -61,21 +60,47 @@ namespace formIndex
             this.panelHome.Controls.Add(this.comboTo);
             this.panelHome.Controls.Add(this.comboSelectOrigin);
             this.panelHome.Location = new System.Drawing.Point(41, 173);
-            this.panelHome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelHome.Margin = new System.Windows.Forms.Padding(2);
             this.panelHome.Name = "panelHome";
             this.panelHome.Size = new System.Drawing.Size(665, 229);
             this.panelHome.TabIndex = 0;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BackColor = System.Drawing.Color.White;
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearch.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Location = new System.Drawing.Point(502, 93);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(117, 28);
+            this.btnSearch.TabIndex = 30;
+            this.btnSearch.Text = "SEARCH >";
+            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 80);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(154, 149);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(319, 21);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(68, 22);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Departure";
             // 
             // lblTo
             // 
@@ -101,6 +126,18 @@ namespace formIndex
             this.lblFrom.TabIndex = 7;
             this.lblFrom.Text = "From";
             // 
+            // comboDepart
+            // 
+            this.comboDepart.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboDepart.Font = new System.Drawing.Font("Poppins", 10F);
+            this.comboDepart.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.comboDepart.FormattingEnabled = true;
+            this.comboDepart.Location = new System.Drawing.Point(323, 45);
+            this.comboDepart.Margin = new System.Windows.Forms.Padding(2);
+            this.comboDepart.Name = "comboDepart";
+            this.comboDepart.Size = new System.Drawing.Size(296, 31);
+            this.comboDepart.TabIndex = 2;
+            // 
             // comboTo
             // 
             this.comboTo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -108,7 +145,7 @@ namespace formIndex
             this.comboTo.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.comboTo.FormattingEnabled = true;
             this.comboTo.Location = new System.Drawing.Point(176, 45);
-            this.comboTo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboTo.Margin = new System.Windows.Forms.Padding(2);
             this.comboTo.Name = "comboTo";
             this.comboTo.Size = new System.Drawing.Size(119, 31);
             this.comboTo.TabIndex = 2;
@@ -129,7 +166,7 @@ namespace formIndex
             "HDY",
             "KKC"});
             this.comboSelectOrigin.Location = new System.Drawing.Point(35, 45);
-            this.comboSelectOrigin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboSelectOrigin.Margin = new System.Windows.Forms.Padding(2);
             this.comboSelectOrigin.Name = "comboSelectOrigin";
             this.comboSelectOrigin.Size = new System.Drawing.Size(119, 31);
             this.comboSelectOrigin.TabIndex = 1;
@@ -163,26 +200,12 @@ namespace formIndex
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LavenderBlush;
-            this.panel1.Controls.Add(this.lblSignUp);
             this.panel1.Controls.Add(this.lblSignIn);
             this.panel1.Location = new System.Drawing.Point(0, -1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(748, 121);
             this.panel1.TabIndex = 14;
-            // 
-            // lblSignUp
-            // 
-            this.lblSignUp.BackColor = System.Drawing.Color.White;
-            this.lblSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblSignUp.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSignUp.Location = new System.Drawing.Point(635, 34);
-            this.lblSignUp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblSignUp.Name = "lblSignUp";
-            this.lblSignUp.Size = new System.Drawing.Size(83, 43);
-            this.lblSignUp.TabIndex = 30;
-            this.lblSignUp.Text = "SIGN UP";
-            this.lblSignUp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblSignIn
             // 
@@ -190,51 +213,14 @@ namespace formIndex
             this.lblSignIn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblSignIn.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSignIn.ForeColor = System.Drawing.Color.White;
-            this.lblSignIn.Location = new System.Drawing.Point(548, 34);
+            this.lblSignIn.Location = new System.Drawing.Point(548, 32);
             this.lblSignIn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSignIn.Name = "lblSignIn";
-            this.lblSignIn.Size = new System.Drawing.Size(83, 43);
+            this.lblSignIn.Size = new System.Drawing.Size(158, 43);
             this.lblSignIn.TabIndex = 29;
             this.lblSignIn.Text = "SIGN IN";
             this.lblSignIn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.BackColor = System.Drawing.Color.White;
-            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearch.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(502, 93);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(117, 28);
-            this.btnSearch.TabIndex = 30;
-            this.btnSearch.Text = "SEARCH >";
-            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(319, 21);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 22);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Departure";
-            // 
-            // comboDepart
-            // 
-            this.comboDepart.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboDepart.Font = new System.Drawing.Font("Poppins", 10F);
-            this.comboDepart.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.comboDepart.FormattingEnabled = true;
-            this.comboDepart.Location = new System.Drawing.Point(323, 45);
-            this.comboDepart.Margin = new System.Windows.Forms.Padding(2);
-            this.comboDepart.Name = "comboDepart";
-            this.comboDepart.Size = new System.Drawing.Size(296, 31);
-            this.comboDepart.TabIndex = 2;
+            this.lblSignIn.Click += new System.EventHandler(this.lblSignIn_Click);
             // 
             // Home
             // 
@@ -248,7 +234,7 @@ namespace formIndex
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
@@ -273,7 +259,6 @@ namespace formIndex
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblSignIn;
-        private System.Windows.Forms.Label lblSignUp;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label btnSearch;
         private System.Windows.Forms.Label label2;

@@ -51,6 +51,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\Forms\LoginBoard\LoginBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Forms\LoginBoard\LoginBoard.Designer.cs">
+      <DependentUpon>LoginBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginData.cs" />
+    <Compile Include="src\Data\Address Data\addressData.cs" />
+    <Compile Include="src\Data\Member Data\memberData.cs" />
     <Compile Include="src\Forms\Payment\Payment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +121,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="src\Forms\LoginBoard\LoginBoard.resx">
+      <DependentUpon>LoginBoard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\Forms\Management Booking\ManageBooking.resx">
       <DependentUpon>ManageBooking.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,6 +174,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="src\Data\Login Data\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -22,6 +22,11 @@ namespace formIndex {
 
         private void Home_Load(object sender, EventArgs e) {
             //
+            if (loginData.login) {
+                lblSignIn.Text = "< BACK";
+            } else {
+                lblSignIn.Text = "SIGN IN";
+            }
         }
 
         private void comboSelectOrigin_SelectedIndexChanged(object sender, EventArgs e) {
@@ -160,6 +165,19 @@ namespace formIndex {
                 return false;
             }
             return true;
+        }
+
+
+        private void lblSignIn_Click(object sender, EventArgs e) {
+            if (lblSignIn.Text == "SIGN IN") {
+                var form = new SignIn();
+                form.Show();
+                this.Hide();
+            } else {
+                var form = new LoginBoard();
+                form.Show();
+                this.Hide();
+            }
         }
     }
 }
