@@ -89,6 +89,19 @@ namespace formIndex
             }
 
             // Sign in code
+            if (loginData.login) {
+                comboTitle.Text = memberData.mem_title;
+                textFname.Text = memberData.mem_fname;
+                textLname.Text = memberData.mem_lname;
+                textEmail.Text = memberData.mem_email.Split('@')[0];
+                comboEmail.Text = memberData.mem_email.Split('@')[1];
+                dateTimeDOB.Value = new DateTime
+                    (
+                        Convert.ToInt32(memberData.mem_DOB.Split('/')[2]), // Year
+                        Convert.ToInt32(memberData.mem_DOB.Split('/')[0]), // Month
+                        Convert.ToInt32(memberData.mem_DOB.Split('/')[1]) // Day
+                    );
+            }
             
         }
 

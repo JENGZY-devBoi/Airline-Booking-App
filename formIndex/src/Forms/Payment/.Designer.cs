@@ -30,8 +30,23 @@ namespace formIndex {
             this.btnSuccess = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtLname = new System.Windows.Forms.TextBox();
+            this.txtFname = new System.Windows.Forms.TextBox();
+            this.txtMas = new System.Windows.Forms.TextBox();
+            this.txtExpir = new System.Windows.Forms.TextBox();
+            this.txtCVC = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
@@ -40,27 +55,12 @@ namespace formIndex {
             this.label4 = new System.Windows.Forms.Label();
             this.lblFlightPriceBInfo = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.txtCVC = new System.Windows.Forms.TextBox();
-            this.txtMas = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtFname = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtLname = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtExpir = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.timerTimeNow = new System.Windows.Forms.Timer(this.components);
             this.panel8.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel9.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label5
@@ -126,6 +126,139 @@ namespace formIndex {
             this.panel2.Size = new System.Drawing.Size(1273, 522);
             this.panel2.TabIndex = 22;
             // 
+            // panel1
+            // 
+            this.panel1.AutoScroll = true;
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.btnSuccess);
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.txtLname);
+            this.panel1.Controls.Add(this.txtFname);
+            this.panel1.Controls.Add(this.txtMas);
+            this.panel1.Controls.Add(this.txtExpir);
+            this.panel1.Controls.Add(this.txtCVC);
+            this.panel1.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.Location = new System.Drawing.Point(621, 26);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(555, 460);
+            this.panel1.TabIndex = 9;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.White;
+            this.label11.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(59, 216);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(132, 28);
+            this.label11.TabIndex = 26;
+            this.label11.Text = "Expiration date";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.White;
+            this.label12.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(144, 158);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(47, 28);
+            this.label12.TabIndex = 26;
+            this.label12.Text = "CVC";
+            // 
+            // label14
+            // 
+            this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.label14.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(0, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(555, 36);
+            this.label14.TabIndex = 2;
+            this.label14.Text = "Payment Method";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label10
+            // 
+            this.label10.BackColor = System.Drawing.Color.White;
+            this.label10.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(93, 331);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(98, 31);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "Last name";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.White;
+            this.label8.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(93, 270);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(98, 31);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "First name";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.White;
+            this.label9.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(29, 99);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(162, 31);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "Debit/Master card";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txtLname
+            // 
+            this.txtLname.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLname.Location = new System.Drawing.Point(198, 325);
+            this.txtLname.Name = "txtLname";
+            this.txtLname.Size = new System.Drawing.Size(278, 35);
+            this.txtLname.TabIndex = 25;
+            // 
+            // txtFname
+            // 
+            this.txtFname.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFname.Location = new System.Drawing.Point(198, 267);
+            this.txtFname.Name = "txtFname";
+            this.txtFname.Size = new System.Drawing.Size(278, 35);
+            this.txtFname.TabIndex = 25;
+            // 
+            // txtMas
+            // 
+            this.txtMas.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMas.Location = new System.Drawing.Point(198, 93);
+            this.txtMas.Name = "txtMas";
+            this.txtMas.Size = new System.Drawing.Size(278, 35);
+            this.txtMas.TabIndex = 25;
+            this.txtMas.Text = "1234567890123";
+            // 
+            // txtExpir
+            // 
+            this.txtExpir.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtExpir.Location = new System.Drawing.Point(198, 209);
+            this.txtExpir.MaxLength = 3;
+            this.txtExpir.Name = "txtExpir";
+            this.txtExpir.Size = new System.Drawing.Size(64, 35);
+            this.txtExpir.TabIndex = 28;
+            this.txtExpir.Text = "5/23";
+            // 
+            // txtCVC
+            // 
+            this.txtCVC.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCVC.Location = new System.Drawing.Point(198, 151);
+            this.txtCVC.MaxLength = 3;
+            this.txtCVC.Name = "txtCVC";
+            this.txtCVC.Size = new System.Drawing.Size(64, 35);
+            this.txtCVC.TabIndex = 28;
+            this.txtCVC.Text = "010";
+            // 
             // panel4
             // 
             this.panel4.AutoScroll = true;
@@ -150,104 +283,6 @@ namespace formIndex {
             this.label6.TabIndex = 2;
             this.label6.Text = "Select Method";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.LavenderBlush;
-            this.panel9.Controls.Add(this.label21);
-            this.panel9.Controls.Add(this.lblTotal);
-            this.panel9.Controls.Add(this.label20);
-            this.panel9.Controls.Add(this.lblSeatPriceBInfo);
-            this.panel9.Controls.Add(this.label4);
-            this.panel9.Controls.Add(this.lblFlightPriceBInfo);
-            this.panel9.Controls.Add(this.label3);
-            this.panel9.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel9.ForeColor = System.Drawing.Color.Black;
-            this.panel9.Location = new System.Drawing.Point(132, 26);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(426, 221);
-            this.panel9.TabIndex = 7;
-            // 
-            // label21
-            // 
-            this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.label21.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(0, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(426, 36);
-            this.label21.TabIndex = 2;
-            this.label21.Text = "Booking Info";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblTotal
-            // 
-            this.lblTotal.BackColor = System.Drawing.Color.LavenderBlush;
-            this.lblTotal.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Location = new System.Drawing.Point(274, 160);
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(110, 31);
-            this.lblTotal.TabIndex = 2;
-            this.lblTotal.Text = "1000.00";
-            this.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label20
-            // 
-            this.label20.BackColor = System.Drawing.Color.LavenderBlush;
-            this.label20.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(48, 160);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(124, 31);
-            this.label20.TabIndex = 2;
-            this.label20.Text = "Total(THB)";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblSeatPriceBInfo
-            // 
-            this.lblSeatPriceBInfo.BackColor = System.Drawing.Color.LavenderBlush;
-            this.lblSeatPriceBInfo.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSeatPriceBInfo.ForeColor = System.Drawing.Color.Silver;
-            this.lblSeatPriceBInfo.Location = new System.Drawing.Point(275, 105);
-            this.lblSeatPriceBInfo.Name = "lblSeatPriceBInfo";
-            this.lblSeatPriceBInfo.Size = new System.Drawing.Size(109, 31);
-            this.lblSeatPriceBInfo.TabIndex = 2;
-            this.lblSeatPriceBInfo.Text = "1000.00";
-            this.lblSeatPriceBInfo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.Color.LavenderBlush;
-            this.label4.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Silver;
-            this.label4.Location = new System.Drawing.Point(48, 108);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(109, 31);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Seat price";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblFlightPriceBInfo
-            // 
-            this.lblFlightPriceBInfo.BackColor = System.Drawing.Color.LavenderBlush;
-            this.lblFlightPriceBInfo.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFlightPriceBInfo.ForeColor = System.Drawing.Color.Silver;
-            this.lblFlightPriceBInfo.Location = new System.Drawing.Point(275, 74);
-            this.lblFlightPriceBInfo.Name = "lblFlightPriceBInfo";
-            this.lblFlightPriceBInfo.Size = new System.Drawing.Size(109, 31);
-            this.lblFlightPriceBInfo.TabIndex = 2;
-            this.lblFlightPriceBInfo.Text = "1000.00";
-            this.lblFlightPriceBInfo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.LavenderBlush;
-            this.label3.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Silver;
-            this.label3.Location = new System.Drawing.Point(48, 77);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 31);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Flight price";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label2
             // 
@@ -282,138 +317,103 @@ namespace formIndex {
             this.label7.Text = "Payment Method";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // panel1
+            // panel9
             // 
-            this.panel1.AutoScroll = true;
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.btnSuccess);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.label14);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.txtLname);
-            this.panel1.Controls.Add(this.txtFname);
-            this.panel1.Controls.Add(this.txtMas);
-            this.panel1.Controls.Add(this.txtExpir);
-            this.panel1.Controls.Add(this.txtCVC);
-            this.panel1.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(621, 26);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(555, 460);
-            this.panel1.TabIndex = 9;
+            this.panel9.BackColor = System.Drawing.Color.White;
+            this.panel9.Controls.Add(this.label21);
+            this.panel9.Controls.Add(this.lblTotal);
+            this.panel9.Controls.Add(this.label20);
+            this.panel9.Controls.Add(this.lblSeatPriceBInfo);
+            this.panel9.Controls.Add(this.label4);
+            this.panel9.Controls.Add(this.lblFlightPriceBInfo);
+            this.panel9.Controls.Add(this.label3);
+            this.panel9.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel9.ForeColor = System.Drawing.Color.Black;
+            this.panel9.Location = new System.Drawing.Point(132, 26);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(426, 221);
+            this.panel9.TabIndex = 7;
             // 
-            // label14
+            // label21
             // 
-            this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.label14.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(0, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(555, 36);
-            this.label14.TabIndex = 2;
-            this.label14.Text = "Payment Method";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.label21.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(0, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(426, 36);
+            this.label21.TabIndex = 2;
+            this.label21.Text = "Booking Info";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label12
+            // lblTotal
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.White;
-            this.label12.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(144, 158);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(47, 28);
-            this.label12.TabIndex = 26;
-            this.label12.Text = "CVC";
+            this.lblTotal.BackColor = System.Drawing.Color.White;
+            this.lblTotal.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.Location = new System.Drawing.Point(274, 160);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(110, 31);
+            this.lblTotal.TabIndex = 2;
+            this.lblTotal.Text = "1000.00";
+            this.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // txtCVC
+            // label20
             // 
-            this.txtCVC.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCVC.Location = new System.Drawing.Point(198, 151);
-            this.txtCVC.MaxLength = 3;
-            this.txtCVC.Name = "txtCVC";
-            this.txtCVC.Size = new System.Drawing.Size(64, 35);
-            this.txtCVC.TabIndex = 28;
-            this.txtCVC.Text = "010";
+            this.label20.BackColor = System.Drawing.Color.White;
+            this.label20.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(48, 160);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(124, 31);
+            this.label20.TabIndex = 2;
+            this.label20.Text = "Total(THB)";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // txtMas
+            // lblSeatPriceBInfo
             // 
-            this.txtMas.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMas.Location = new System.Drawing.Point(198, 93);
-            this.txtMas.Name = "txtMas";
-            this.txtMas.Size = new System.Drawing.Size(278, 35);
-            this.txtMas.TabIndex = 25;
-            this.txtMas.Text = "1234567890123";
+            this.lblSeatPriceBInfo.BackColor = System.Drawing.Color.White;
+            this.lblSeatPriceBInfo.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSeatPriceBInfo.ForeColor = System.Drawing.Color.Silver;
+            this.lblSeatPriceBInfo.Location = new System.Drawing.Point(275, 105);
+            this.lblSeatPriceBInfo.Name = "lblSeatPriceBInfo";
+            this.lblSeatPriceBInfo.Size = new System.Drawing.Size(109, 31);
+            this.lblSeatPriceBInfo.TabIndex = 2;
+            this.lblSeatPriceBInfo.Text = "1000.00";
+            this.lblSeatPriceBInfo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label9
+            // label4
             // 
-            this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(29, 99);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(162, 31);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "Debit/Master card";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Silver;
+            this.label4.Location = new System.Drawing.Point(48, 108);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(109, 31);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Seat price";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // txtFname
+            // lblFlightPriceBInfo
             // 
-            this.txtFname.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFname.Location = new System.Drawing.Point(198, 267);
-            this.txtFname.Name = "txtFname";
-            this.txtFname.Size = new System.Drawing.Size(278, 35);
-            this.txtFname.TabIndex = 25;
+            this.lblFlightPriceBInfo.BackColor = System.Drawing.Color.White;
+            this.lblFlightPriceBInfo.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlightPriceBInfo.ForeColor = System.Drawing.Color.Silver;
+            this.lblFlightPriceBInfo.Location = new System.Drawing.Point(275, 74);
+            this.lblFlightPriceBInfo.Name = "lblFlightPriceBInfo";
+            this.lblFlightPriceBInfo.Size = new System.Drawing.Size(109, 31);
+            this.lblFlightPriceBInfo.TabIndex = 2;
+            this.lblFlightPriceBInfo.Text = "1000.00";
+            this.lblFlightPriceBInfo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label8
+            // label3
             // 
-            this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(93, 270);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(98, 31);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "First name";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txtLname
-            // 
-            this.txtLname.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLname.Location = new System.Drawing.Point(198, 325);
-            this.txtLname.Name = "txtLname";
-            this.txtLname.Size = new System.Drawing.Size(278, 35);
-            this.txtLname.TabIndex = 25;
-            // 
-            // label10
-            // 
-            this.label10.BackColor = System.Drawing.Color.White;
-            this.label10.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(93, 331);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(98, 31);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "Last name";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txtExpir
-            // 
-            this.txtExpir.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtExpir.Location = new System.Drawing.Point(198, 209);
-            this.txtExpir.MaxLength = 3;
-            this.txtExpir.Name = "txtExpir";
-            this.txtExpir.Size = new System.Drawing.Size(64, 35);
-            this.txtExpir.TabIndex = 28;
-            this.txtExpir.Text = "5/23";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.White;
-            this.label11.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(59, 216);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(132, 28);
-            this.label11.TabIndex = 26;
-            this.label11.Text = "Expiration date";
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Silver;
+            this.label3.Location = new System.Drawing.Point(48, 77);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(109, 31);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Flight price";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // timerTimeNow
             // 
@@ -435,10 +435,10 @@ namespace formIndex {
             this.Load += new System.EventHandler(this.Payment_Load);
             this.panel8.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

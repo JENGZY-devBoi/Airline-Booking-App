@@ -69,40 +69,74 @@ namespace formIndex {
                     "Notification"
                 );
 
-                // GO TO SEARCH FORM
-                //var formSearch = new formSearch();
-                //formSearch.Show();
-                //this.Hide();
+                if (loginData.login) {
+                    var form = new LoginBoard();
+                    form.Show();
+                    this.Hide();
+                } else {
+                    var form = new Home();
+                    form.Show();
+                    this.Hide();
+                }
             }
         }
 
         private void postPassengerDB() {
             // Login
 
-            try {
-                dbConfig.connection.Open();
-                var adapter = new SqlDataAdapter();
-                string sql =
-                    $"INSERT INTO passengers " +
-                    $"(passengersTitle,passengersFname,passengersLname," +
-                    $"passengersDOB,passengersEmail) " +
-                    $"VALUES(" +
-                    $"'{passengerData.passengerTitle}'," +
-                    $"'{passengerData.passengerFname}'," +
-                    $"'{passengerData.passengerLname}'," +
-                    $"'{passengerData.passengerDOB}'," +
-                    $"'{passengerData.passengerEmail}');";
-                adapter.InsertCommand = dbConfig.connection.CreateCommand();
-                adapter.InsertCommand.CommandText = sql;
-                adapter.InsertCommand.ExecuteNonQuery();
-            } catch (Exception ex) {
-                MessageBox.Show
-                (
-                    ex.Message,
-                    "Error",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Error
-                );
+            if (loginData.login) {
+                try {
+                    dbConfig.connection.Open();
+                    var adapter = new SqlDataAdapter();
+                    string sql =
+                        $"INSERT INTO passengers " +
+                        $"(passengersTitle,passengersFname,passengersLname," +
+                        $"passengersDOB,passengersEmail, memberID) " +
+                        $"VALUES(" +
+                        $"'{passengerData.passengerTitle}'," +
+                        $"'{passengerData.passengerFname}'," +
+                        $"'{passengerData.passengerLname}'," +
+                        $"'{passengerData.passengerDOB}'," +
+                        $"'{passengerData.passengerEmail}'," +
+                        $"'{memberData.mem_id}');";
+                    adapter.InsertCommand = dbConfig.connection.CreateCommand();
+                    adapter.InsertCommand.CommandText = sql;
+                    adapter.InsertCommand.ExecuteNonQuery();
+                } catch (Exception ex) {
+                    MessageBox.Show
+                    (
+                        ex.Message,
+                        "Error",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error
+                    );
+                }
+            } else {
+                try {
+                    dbConfig.connection.Open();
+                    var adapter = new SqlDataAdapter();
+                    string sql =
+                        $"INSERT INTO passengers " +
+                        $"(passengersTitle,passengersFname,passengersLname," +
+                        $"passengersDOB,passengersEmail) " +
+                        $"VALUES(" +
+                        $"'{passengerData.passengerTitle}'," +
+                        $"'{passengerData.passengerFname}'," +
+                        $"'{passengerData.passengerLname}'," +
+                        $"'{passengerData.passengerDOB}'," +
+                        $"'{passengerData.passengerEmail}');";
+                    adapter.InsertCommand = dbConfig.connection.CreateCommand();
+                    adapter.InsertCommand.CommandText = sql;
+                    adapter.InsertCommand.ExecuteNonQuery();
+                } catch (Exception ex) {
+                    MessageBox.Show
+                    (
+                        ex.Message,
+                        "Error",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error
+                    );
+                }
             }
             dbConfig.connection.Close();
         }
@@ -226,6 +260,11 @@ namespace formIndex {
             // Data passenger
             txtFname.Text = passengerData.passengerFname;
             txtLname.Text = passengerData.passengerLname;
+
+            lblFlightPriceBInfo.Text = flightData.flightPrice.ToString("#,#.00");
+            lblSeatPriceBInfo.Text = seatData.seatPrice.ToString("#,#.00");
+            lblTotal.Text = totalPrice.ToString("#,#.00");
+
 
             // Timer Now
             timerTimeNow.Start();

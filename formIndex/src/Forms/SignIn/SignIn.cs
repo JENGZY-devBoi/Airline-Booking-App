@@ -76,7 +76,7 @@ namespace formIndex
                 memberData.mem_fname = dr[0]["memberFname"].ToString();
                 memberData.mem_lname = dr[0]["memberLname"].ToString();
                 memberData.mem_gender = dr[0]["memberGender"].ToString();
-                memberData.mem_DOB = dr[0]["memberDOB"].ToString();
+                memberData.mem_DOB = dr[0]["memberDOB"].ToString().Split(' ')[0];
                 memberData.mem_houseno = dr[0]["memberHouseNo"].ToString();
                 memberData.mem_road = dr[0]["memberPhone"].ToString();
                 memberData.mem_email = dr[0]["memberEmail"].ToString();
@@ -84,6 +84,7 @@ namespace formIndex
 
                 addressData.addr_id = dr[0]["addressID"].ToString();
 
+                Console.WriteLine(memberData.mem_DOB);
                 // Login
                 loginData.login = true;
 
@@ -113,6 +114,10 @@ namespace formIndex
             var form = new Home();
             form.Show();
             this.Hide();
+        }
+
+        private void SignIn_Load(object sender, EventArgs e) {
+
         }
     }
 }

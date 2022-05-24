@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace formIndex {
     public partial class LoginBoard : Form {
@@ -24,6 +25,11 @@ namespace formIndex {
 
         private void LoginBoard_Load(object sender, EventArgs e) {
             init();
+            fetchData();
+        }
+
+        private void fetchData() {
+            ///
         }
 
         private void init() {
