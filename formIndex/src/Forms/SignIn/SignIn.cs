@@ -78,7 +78,7 @@ namespace formIndex
                 memberData.mem_gender = dr[0]["memberGender"].ToString();
                 memberData.mem_DOB = dr[0]["memberDOB"].ToString().Split(' ')[0];
                 memberData.mem_houseno = dr[0]["memberHouseNo"].ToString();
-                memberData.mem_road = dr[0]["memberPhone"].ToString();
+                memberData.mem_phone = dr[0]["memberPhone"].ToString();
                 memberData.mem_email = dr[0]["memberEmail"].ToString();
                 memberData.mem_pwd = dr[0]["memberPassword"].ToString();
 

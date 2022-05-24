@@ -42,5 +42,17 @@ namespace formIndex {
             form.Show();
             this.Hide();
         }
+
+        private void btnAccountDetail_Click(object sender, EventArgs e) {
+            var form = new AccountDetail();
+            form.Show();
+            this.Hide();
+        }
+
+        private void label3_Click(object sender, EventArgs e) {
+            var form = new ManageBooking();
+            form.Show();
+            this.Hide();
+        }
     }
 }

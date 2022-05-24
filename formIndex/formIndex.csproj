@@ -51,6 +51,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\Forms\Cancle\Cancle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Forms\Cancle\Cancle.Designer.cs">
+      <DependentUpon>Cancle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Forms\Postpone\Postpone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Forms\Postpone\Postpone.Designer.cs">
+      <DependentUpon>Postpone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Forms\Account Detail\AccountDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Forms\Account Detail\AccountDetail.Designer.cs">
+      <DependentUpon>AccountDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Forms\LoginBoard\LoginBoard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +139,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="src\Forms\Account Detail\AccountDetail.resx">
+      <DependentUpon>AccountDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Forms\Cancle\Cancle.resx">
+      <DependentUpon>Cancle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\Forms\LoginBoard\LoginBoard.resx">
       <DependentUpon>LoginBoard.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="src\Forms\Payment\Payment.resx">
       <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Forms\Postpone\Postpone.resx">
+      <DependentUpon>Postpone.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Forms\SelectSeat\SeatsSelection.resx">
       <DependentUpon>SeatsSelection.cs</DependentUpon>
